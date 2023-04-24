@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+
+<mapper namespace="project.norbs.mapper.ActorMapper" >
+
+    <select id="getAllActor" resultType="project.norbs.model.ActorModel">
+        SELECT
+        actor_id actorId,
+        first_name firstName,
+        last_name lastName,
+        last_update lastUpdate
+        FROM actor
+    </select>
+
+    <select id="getActorList" resultType="project.norbs.model.ActorModel">
+        SELECT
+        actor_id actorId,
+        first_name firstName,
+        last_name lastName,
+        last_update lastUpdate
+        FROM actor
+        <where>
+           <!-- <if test="actorIds.size() > 0 and actorIds !=null">
+                <foreach collection="actorIds" open="actor_id in(" separator="," close=")" item="id">
+                    #{id}
+                </foreach>
+            </if>-->
+            <if test="actorId!=null and actorId!=''">
+                AND actor_id = #{actorId}
+            </if>
+            <if test="firstName!=null and firstName!=''">
+                AND first_name = #{firstName}
+            </if>
+            <if test="lastName!=null and lastName!=''">
+                AND last_name = #{lastName}
+            </if>
+        </where>
+    </select>
+
+</mapper>

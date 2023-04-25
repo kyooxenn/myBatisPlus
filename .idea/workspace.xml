@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="518c686e-f742-4add-9af7-310ab9ab2882" name="Changes" comment="" />
+    <list default="true" id="518c686e-f742-4add-9af7-310ab9ab2882" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/norbs/controller/ActorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/norbs/controller/ActorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/norbs/model/ActorModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/norbs/model/ActorModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/norbs/services/iface/SakilaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/norbs/services/iface/SakilaService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/project/norbs/services/impl/SakilaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/project/norbs/services/impl/SakilaServiceImpl.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +20,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -37,7 +47,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/008/Desktop/norbs/src/main/resources/mapper"
+    "last_opened_file_path": "C:/Users/008/Desktop/myBatisPlus"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -85,5 +95,16 @@
       <updated>1682141177133</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

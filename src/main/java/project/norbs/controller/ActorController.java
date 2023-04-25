@@ -1,12 +1,14 @@
 package project.norbs.controller;
 
 import jakarta.annotation.Resource;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import project.norbs.dto.ActorDTO;
 import project.norbs.enums.ErrorType;
 import project.norbs.exception.BaseException;
 import project.norbs.services.iface.SakilaService;
+import project.norbs.vo.BaseResponse;
 import project.norbs.vo.ResponseHelper;
 import project.norbs.vo.ResponseVO;
 
@@ -46,6 +48,15 @@ public class ActorController {
         }
     }
 
-
+    @PostMapping("/export/actor")
+    public BaseResponse exportActor(@RequestBody ActorDTO actorDTO, HttpServletResponse response) {
+        try {
+            this.sakilaService.getActorExport(actorDTO, response);
+            return BaseResponse.EMPTY;
+        } catch (Exception e) {
+            log.error("export actor error: {} ", e.getMessage());
+            throw BaseException.create(ErrorType.OtherUnhandledError, e == null ? "java.lang.NullException" : e.getMessage());
+        }
+    }
 
 }
